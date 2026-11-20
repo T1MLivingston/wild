@@ -36,6 +36,10 @@ Drop files into `assets/` with the exact names below. The page picks them up on 
 - `assets/downloads/Wild-Florida-Permission-Slip-Fillable.pdf`
 - `assets/downloads/Wild-Florida-Social-Post.png`
 
+## Online permission form
+
+The "Fill it out online" buttons go to the Google Form. To change it, search `index.html` for `docs.google.com` and swap in the new link (it appears twice).
+
 ## Previewing other dates
 
 The countdown and the "today" box on the calendar follow Eastern time. To see how the page looks on another day, add `?now=` to the address:
