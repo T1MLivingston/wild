@@ -112,25 +112,16 @@
   }
 
   /* ---------- Payment open or closed ---------- */
-  var sticky = document.querySelector(".sticky-pay");
   var paymentOpen = true;
   function updatePayState(t) {
     paymentOpen = t <= PAY_CLOSE;
     var note = document.querySelector(".pay-closed-note");
     if (note) note.hidden = paymentOpen;
-    if (!paymentOpen && sticky) sticky.hidden = true;
   }
 
   tick();
   setInterval(tick, 1000);
 
-  /* Sticky pay bar shows on phones after the hero scrolls away */
-  var hero = document.querySelector(".hero");
-  if (sticky && hero && "IntersectionObserver" in window) {
-    new IntersectionObserver(function (entries) {
-      sticky.hidden = !paymentOpen || entries[0].isIntersecting;
-    }).observe(hero);
-  }
 
   /* ---------- Calendar ---------- */
   var EVENTS = {

@@ -33,42 +33,27 @@
   </header>
 
   <main id="main">
-    <!-- Hero, with the countdown -->
+    <!-- Hero -->
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="wrap hero-inner">
+      <div class="hero-photo-wrap">
         <figure class="hero-photo">
           <img src="assets/entrance-sign.jpg" alt="A family walking past the Wild Florida entrance sign" width="1000" height="600" fetchpriority="high" data-placeholder="Entrance sign photo">
           <p class="tag mono">SSCS 6th Grade Field Trip</p>
         </figure>
-        <div class="hero-text">
-          <h1 id="hero-title">Our 6th Graders Are Headed to <span class="accent">Wild Florida!</span></h1>
-          <p class="hero-sub">One last adventure right before winter break</p>
-          <p class="hero-date"><strong>Friday, December 11, 2026</strong> <span>Open to all 6th graders</span></p>
-          <a class="btn btn-red btn-big pay-link" href="https://www.schoolpay.com/pay/for/6th-Grade-Wild-Florida-Field-Trip--20262/ScR5lhn" target="_blank" rel="noopener">
-            Pay on SchoolPay<span class="visually-hidden"> (opens in a new tab)</span>
-          </a>
-          <p class="pay-closed-note" hidden>Payment closed on Tue, Dec 1.</p>
-          <p class="badge mono">Pay by Tue, Dec 1 · Forms by Fri, Dec 4</p>
-
-          <div class="countdown" id="countdown">
-            <p class="countdown-title">Payment closes in</p>
-            <div class="countdown-clock" role="timer" aria-live="off" aria-atomic="true">
-              <div class="unit"><span class="num" data-unit="days">--</span><span class="label mono">Days</span></div>
-              <div class="unit"><span class="num" data-unit="hours">--</span><span class="label mono">Hrs</span></div>
-              <div class="unit"><span class="num" data-unit="minutes">--</span><span class="label mono">Min</span></div>
-              <div class="unit"><span class="num" data-unit="seconds">--</span><span class="label mono">Sec</span></div>
-            </div>
-            <p class="countdown-note">Tue, Dec 1. No late payments.</p>
-          </div>
-        </div>
+      </div>
+      <div class="wrap hero-text">
+        <h1 id="hero-title">Our 6th Graders Are Headed to <span class="accent">Wild Florida!</span></h1>
+        <p class="hero-sub">One last adventure right before winter break</p>
+        <p class="hero-date"><strong>Friday, December 11, 2026</strong> <span>Open to all 6th graders</span></p>
+        <p class="badge mono">Pay by Tue, Dec 1 · Forms by Fri, Dec 4</p>
       </div>
     </section>
 
     <nav class="jump" aria-label="Jump to a section">
       <ul class="wrap">
-        <li><a href="#steps">Sign up</a></li>
         <li><a href="#dates">Dates</a></li>
         <li><a href="#prices">Prices</a></li>
+        <li><a href="#steps">Sign up</a></li>
         <li><a href="#day">Our day</a></li>
         <li><a href="#park">The park</a></li>
         <li><a href="#pack">Packing</a></li>
@@ -76,6 +61,74 @@
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
+
+    <!-- Calendar + add to calendar -->
+    <section class="section" id="dates" aria-labelledby="dates-title">
+      <div class="wrap">
+        <p class="eyebrow mono">Key dates</p>
+        <h2 id="dates-title">Nov <span aria-hidden="true">&rarr;</span><span class="visually-hidden">to</span> Dec 2026</h2>
+
+        <div class="dates-grid">
+          <div class="cal-card">
+            <ul class="legend" aria-label="Calendar legend">
+              <li><span class="swatch swatch-pay" aria-hidden="true"></span>Payment closes</li>
+              <li><span class="swatch swatch-forms" aria-hidden="true"></span>Forms due</li>
+              <li><span class="swatch swatch-trip" aria-hidden="true"></span>Trip day</li>
+              <li><span class="swatch swatch-break" aria-hidden="true"></span>No school</li>
+              <li><span class="swatch swatch-today" aria-hidden="true"></span>Today</li>
+            </ul>
+            <div id="calendar" class="calendar"></div>
+            <p class="cal-detail" id="cal-detail" aria-live="polite"></p>
+          </div>
+
+          <div>
+            <ul class="date-list">
+              <li><span class="date mono">Fri, Nov 20</span><span class="dl-what">Flyers go home</span></li>
+              <li><span class="date mono">Nov 23 to 27</span><span class="dl-what">Thanksgiving break, no school</span></li>
+              <li><span class="date mono">Mon, Nov 30</span><span class="dl-what">Back to school</span></li>
+              <li class="is-pay"><span class="date mono">Tue, Dec 1</span><span class="dl-what">Payment closes</span><a class="dl-add" href="assets/calendar/payment-closes.ics" download aria-label="Add Payment closes, Tuesday December 1, to your calendar">+ Calendar</a></li>
+              <li class="is-forms"><span class="date mono">Fri, Dec 4</span><span class="dl-what">Permission slips due</span><a class="dl-add" href="assets/calendar/permission-slip-due.ics" download aria-label="Add Permission slip due, Friday December 4, to your calendar">+ Calendar</a></li>
+              <li class="is-trip"><span class="date mono">Fri, Dec 11</span><span class="dl-what">Trip day!</span><a class="dl-add" href="assets/calendar/wild-florida-trip.ics" download aria-label="Add the Wild Florida trip, Friday December 11, 8:30 AM to 4:00 PM, to your calendar">+ Calendar</a></li>
+            </ul>
+            <p class="small-note">Tap <strong>+ Calendar</strong> to save a date to your phone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prices -->
+    <section class="section section-tint" id="prices" aria-labelledby="prices-title">
+      <div class="wrap">
+        <p class="eyebrow mono">Prices</p>
+        <h2 id="prices-title">Pick your lunch</h2>
+        <div class="prices">
+          <article class="price-card price-bbq">
+            <p class="price"><span class="visually-hidden">Price: </span>$75</p>
+            <div>
+              <h3>With a Wild Florida BBQ lunch</h3>
+              <p>Vegetarian option available.</p>
+            </div>
+          </article>
+          <article class="price-card price-bag">
+            <p class="price"><span class="visually-hidden">Price: </span>$60</p>
+            <div>
+              <h3>With a bagged lunch from home</h3>
+              <p>Bagged lunches only, because we can't keep food cold.</p>
+            </div>
+          </article>
+        </div>
+        <p class="includes"><strong>Both prices include</strong> the bus, park admission, the Animal Meet and Greet, 3 live shows (one is a gator feeding), and tax.</p>
+        <div class="pay-block">
+          <a class="btn btn-red btn-big pay-link" href="https://www.schoolpay.com/pay/for/6th-Grade-Wild-Florida-Field-Trip--20262/ScR5lhn" target="_blank" rel="noopener">Pay on SchoolPay<span class="visually-hidden"> (opens in a new tab)</span></a>
+          <p class="pay-by">Payment closes Tue, Dec 1. No late payments.</p>
+          <p class="pay-closed-note" hidden>Payment closed on Tue, Dec 1.</p>
+        </div>
+
+        <div class="sponsor">
+          <p><strong>Sponsor a student.</strong> Want to help a classmate go? Anyone can cover a student's trip. Just <a href="mailto:Timothy.Livingston@SeminoleScience.org?subject=Sponsor%20a%20student%20for%20Wild%20Florida">email me</a>.</p>
+        </div>
+      </div>
+    </section>
 
     <!-- Note + three steps -->
     <section class="section" id="steps" aria-labelledby="steps-title">
@@ -121,70 +174,6 @@
             </div>
           </li>
         </ol>
-      </div>
-    </section>
-
-    <!-- Calendar + add to calendar -->
-    <section class="section section-tint" id="dates" aria-labelledby="dates-title">
-      <div class="wrap">
-        <p class="eyebrow mono">Key dates</p>
-        <h2 id="dates-title">Nov <span aria-hidden="true">&rarr;</span><span class="visually-hidden">to</span> Dec 2026</h2>
-
-        <div class="dates-grid">
-          <div class="cal-card">
-            <ul class="legend" aria-label="Calendar legend">
-              <li><span class="swatch swatch-pay" aria-hidden="true"></span>Payment closes</li>
-              <li><span class="swatch swatch-forms" aria-hidden="true"></span>Forms due</li>
-              <li><span class="swatch swatch-trip" aria-hidden="true"></span>Trip day</li>
-              <li><span class="swatch swatch-break" aria-hidden="true"></span>No school</li>
-              <li><span class="swatch swatch-today" aria-hidden="true"></span>Today</li>
-            </ul>
-            <div id="calendar" class="calendar"></div>
-            <p class="cal-detail" id="cal-detail" aria-live="polite"></p>
-          </div>
-
-          <div>
-            <ul class="date-list">
-              <li><span class="date mono">Fri, Nov 20</span><span class="dl-what">Flyers go home</span></li>
-              <li><span class="date mono">Nov 23 to 27</span><span class="dl-what">Thanksgiving break, no school</span></li>
-              <li><span class="date mono">Mon, Nov 30</span><span class="dl-what">Back to school</span></li>
-              <li class="is-pay"><span class="date mono">Tue, Dec 1</span><span class="dl-what">Payment closes</span><a class="dl-add" href="assets/calendar/payment-closes.ics" download aria-label="Add Payment closes, Tuesday December 1, to your calendar">+ Calendar</a></li>
-              <li class="is-forms"><span class="date mono">Fri, Dec 4</span><span class="dl-what">Permission slips due</span><a class="dl-add" href="assets/calendar/permission-slip-due.ics" download aria-label="Add Permission slip due, Friday December 4, to your calendar">+ Calendar</a></li>
-              <li class="is-trip"><span class="date mono">Fri, Dec 11</span><span class="dl-what">Trip day! 8:30 AM to 4:00 PM</span><a class="dl-add" href="assets/calendar/wild-florida-trip.ics" download aria-label="Add the Wild Florida trip, Friday December 11, 8:30 AM to 4:00 PM, to your calendar">+ Calendar</a></li>
-            </ul>
-            <p class="small-note">Tap <strong>+ Calendar</strong> to save a date to your phone.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Prices -->
-    <section class="section" id="prices" aria-labelledby="prices-title">
-      <div class="wrap">
-        <p class="eyebrow mono">Prices</p>
-        <h2 id="prices-title">Pick your lunch</h2>
-        <div class="prices">
-          <article class="price-card price-bbq">
-            <p class="price"><span class="visually-hidden">Price: </span>$75</p>
-            <div>
-              <h3>With a Wild Florida BBQ lunch</h3>
-              <p>Vegetarian option available.</p>
-            </div>
-          </article>
-          <article class="price-card price-bag">
-            <p class="price"><span class="visually-hidden">Price: </span>$60</p>
-            <div>
-              <h3>With a bagged lunch from home</h3>
-              <p>Bagged lunches only, because we can't keep food cold.</p>
-            </div>
-          </article>
-        </div>
-        <p class="includes"><strong>Both prices include</strong> the bus, park admission, the Animal Meet and Greet, 3 live shows (one is a gator feeding), and tax.</p>
-        <a class="btn btn-red btn-big pay-link" href="https://www.schoolpay.com/pay/for/6th-Grade-Wild-Florida-Field-Trip--20262/ScR5lhn" target="_blank" rel="noopener">Pay on SchoolPay<span class="visually-hidden"> (opens in a new tab)</span></a>
-
-        <div class="sponsor">
-          <p><strong>Sponsor a student.</strong> Want to help a classmate go? Anyone can cover a student's trip. Just <a href="mailto:Timothy.Livingston@SeminoleScience.org?subject=Sponsor%20a%20student%20for%20Wild%20Florida">email me</a>.</p>
-        </div>
       </div>
     </section>
 
@@ -378,6 +367,21 @@
         </div>
       </div>
     </section>
+    <!-- Countdown -->
+    <section class="countdown-section" aria-labelledby="countdown-title">
+      <div class="wrap">
+        <div class="countdown" id="countdown">
+          <h2 class="countdown-title" id="countdown-title">Payment closes in</h2>
+          <div class="countdown-clock" role="timer" aria-live="off" aria-atomic="true">
+            <div class="unit"><span class="num" data-unit="days">--</span><span class="label mono">Days</span></div>
+            <div class="unit"><span class="num" data-unit="hours">--</span><span class="label mono">Hrs</span></div>
+            <div class="unit"><span class="num" data-unit="minutes">--</span><span class="label mono">Min</span></div>
+            <div class="unit"><span class="num" data-unit="seconds">--</span><span class="label mono">Sec</span></div>
+          </div>
+          <p class="countdown-note">Tue, Dec 1. No late payments.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -391,7 +395,6 @@
     </div>
   </footer>
 
-  <a class="sticky-pay btn btn-red" href="https://www.schoolpay.com/pay/for/6th-Grade-Wild-Florida-Field-Trip--20262/ScR5lhn" target="_blank" rel="noopener" hidden>Pay on SchoolPay by Tue, Dec 1<span class="visually-hidden"> (opens in a new tab)</span></a>
 
   <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
     <div class="lightbox-bar">
