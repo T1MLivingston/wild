@@ -132,7 +132,7 @@
     "2026-11-26": { cls: "is-break", lbl: "", text: "Thu, Nov 26: Happy Thanksgiving! No school." },
     "2026-11-27": { cls: "is-break", lbl: "", text: "Fri, Nov 27: Thanksgiving break, no school." },
     "2026-11-30": { cls: "is-note", lbl: "Back to school", text: "Mon, Nov 30: Back to school." },
-    "2026-12-01": { cls: "is-pay", lbl: "Payment closes", text: "Tue, Dec 1: Payment closes on SchoolPay. No late payments." },
+    "2026-12-01": { cls: "is-pay", lbl: "Payment closes", text: "Tue, Dec 1: Payment closes on SchoolPay." },
     "2026-12-04": { cls: "is-forms", lbl: "Forms due", text: "Fri, Dec 4: Permission slips are due. Pay first, then turn in the slip." },
     "2026-12-11": { cls: "is-trip", lbl: "Trip day!", text: "Fri, Dec 11: Trip day! Buses leave SSCS at 8:30 AM. Pickup at SSCS at 4:00 PM." }
   };
@@ -254,11 +254,6 @@
     b.addEventListener("change", function () { save(); count(); });
   });
   count();
-  var reset = document.getElementById("check-reset");
-  if (reset) reset.addEventListener("click", function () {
-    boxes.forEach(function (b) { b.checked = false; });
-    save(); count();
-  });
 
   /* ---------- Lightbox ---------- */
   var lb = document.getElementById("lightbox");

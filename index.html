@@ -28,6 +28,18 @@
           <span class="brand-name">Field Trip</span>
         </span>
       </a>
+      <nav class="site-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#dates">Dates</a></li>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#steps">3 steps</a></li>
+          <li><a href="#day">Our day</a></li>
+          <li><a href="#park">Park</a></li>
+          <li><a href="#pack">Packing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
       <a class="btn btn-red btn-small header-pay" href="https://www.schoolpay.com/pay/for/6th-Grade-Wild-Florida-Field-Trip--20262/ScR5lhn" target="_blank" rel="noopener">Pay now<span class="visually-hidden"> on SchoolPay (opens in a new tab)</span></a>
     </div>
   </header>
@@ -48,19 +60,6 @@
         <p class="badge mono">Pay by Tue, Dec 1 · Forms by Fri, Dec 4</p>
       </div>
     </section>
-
-    <nav class="jump" aria-label="Jump to a section">
-      <ul class="wrap">
-        <li><a href="#dates">Dates</a></li>
-        <li><a href="#prices">Prices</a></li>
-        <li><a href="#steps">Sign up</a></li>
-        <li><a href="#day">Our day</a></li>
-        <li><a href="#park">The park</a></li>
-        <li><a href="#pack">Packing</a></li>
-        <li><a href="#forms">Forms</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </nav>
 
     <!-- Calendar + add to calendar -->
     <section class="section" id="dates" aria-labelledby="dates-title">
@@ -91,6 +90,10 @@
               <li class="is-trip"><span class="date mono">Fri, Dec 11</span><span class="dl-what">Trip day!</span><a class="dl-add" href="assets/calendar/wild-florida-trip.ics" download aria-label="Add the Wild Florida trip, Friday December 11, 8:30 AM to 4:00 PM, to your calendar">+ Calendar</a></li>
             </ul>
             <p class="small-note">Tap <strong>+ Calendar</strong> to save a date to your phone.</p>
+            <div class="dates-actions">
+              <a class="btn btn-red" href="assets/downloads/Wild-Florida-Permission-Slip-Fillable.pdf" download data-check>Fill out the permission slip</a>
+              <p class="small-note">Due Fri, Dec 4. Pay on SchoolPay first. <a href="#forms">More options</a></p>
+            </div>
           </div>
         </div>
       </div>
@@ -120,7 +123,7 @@
         <p class="includes"><strong>Both prices include</strong> the bus, park admission, the Animal Meet and Greet, 3 live shows (one is a gator feeding), and tax.</p>
         <div class="pay-block">
           <a class="btn btn-red btn-big pay-link" href="https://www.schoolpay.com/pay/for/6th-Grade-Wild-Florida-Field-Trip--20262/ScR5lhn" target="_blank" rel="noopener">Pay on SchoolPay<span class="visually-hidden"> (opens in a new tab)</span></a>
-          <p class="pay-by">Payment closes Tue, Dec 1. No late payments.</p>
+          <p class="pay-by">Payment closes Tue, Dec 1.</p>
           <p class="pay-closed-note" hidden>Payment closed on Tue, Dec 1.</p>
         </div>
 
@@ -130,8 +133,42 @@
       </div>
     </section>
 
+    <!-- Forms and flyer -->
+    <section class="section" id="forms" aria-labelledby="forms-title">
+      <div class="wrap">
+        <p class="eyebrow mono">Forms and flyer</p>
+        <h2 id="forms-title">Get the paperwork</h2>
+
+        <p class="help-strong">You must pay on SchoolPay first.</p>
+        <div class="paper-cards">
+          <a class="paper-card paper-slip" href="assets/downloads/Wild-Florida-Permission-Slip-Fillable.pdf" download data-check>
+            <span class="preview-img"><img src="assets/downloads/Wild-Florida-Permission-Slip.png" alt="" loading="lazy" width="1530" height="1980" data-placeholder="Permission slip"></span>
+            <span class="paper-label"><span class="paper-title">Permission slip</span><span class="paper-cta">Tap to fill it out</span></span>
+          </a>
+          <button type="button" class="paper-card" data-lightbox="assets/downloads/Wild-Florida-Flyer.png" data-lightbox-alt="The Wild Florida trip flyer" data-zoomable>
+            <span class="preview-img"><img src="assets/downloads/Wild-Florida-Flyer.png" alt="" loading="lazy" width="1530" height="1980" data-placeholder="Flyer"></span>
+            <span class="paper-label"><span class="paper-title">The flyer</span><span class="paper-cta">Tap to view</span></span>
+          </button>
+        </div>
+        <p class="help">On iPhone, open it in Files and tap a line to type. On Android, open it in Google Drive. Then print it, or sign it and email it to Mr. Livingston.</p>
+
+        <div class="chaperone-box">
+          <p><strong>Want to chaperone?</strong> Check the chaperone box on the slip, then fill out the sign-up form. Approved volunteers only.</p>
+          <a class="btn btn-navy" href="https://docs.google.com/forms/d/e/1FAIpQLSfiPphG86-RfnBeT64W534dZRwnaAFRCr4L1vhL6Yh_Ex8CCg/viewform" target="_blank" rel="noopener">Sign up to chaperone<span class="visually-hidden"> (Google Form, opens in a new tab)</span></a>
+        </div>
+
+        <ul class="downloads">
+          <li><a class="btn btn-outline" href="assets/downloads/Wild-Florida-Flyer-and-Permission-Slip.pdf" download data-check>Print flyer + permission slip</a></li>
+          <li><a class="btn btn-outline" href="assets/downloads/Wild-Florida-Flyer.png" download data-check>Download flyer</a></li>
+          <li><a class="btn btn-outline" href="assets/downloads/Wild-Florida-Permission-Slip.png" download data-check>Download permission slip</a></li>
+          <li><a class="btn btn-outline" href="assets/downloads/Wild-Florida-Social-Post.png" download data-check>Social post<span class="visually-hidden"> image</span></a></li>
+        </ul>
+        <p class="help small">Share the social post with other families in your group chats.</p>
+      </div>
+    </section>
+
     <!-- Note + three steps -->
-    <section class="section" id="steps" aria-labelledby="steps-title">
+    <section class="section section-tint" id="steps" aria-labelledby="steps-title">
       <div class="wrap">
         <div class="note">
           <p class="note-hi">Hi, families!</p>
@@ -177,7 +214,7 @@
     </section>
 
     <!-- Our day -->
-    <section class="section section-tint" id="day" aria-labelledby="day-title">
+    <section class="section" id="day" aria-labelledby="day-title">
       <div class="wrap">
         <p class="eyebrow mono">Our day</p>
         <h2 id="day-title">Friday, December 11</h2>
@@ -211,7 +248,7 @@
     </section>
 
     <!-- Inside the park + animals -->
-    <section class="section" id="park" aria-labelledby="park-title">
+    <section class="section section-tint" id="park" aria-labelledby="park-title">
       <div class="wrap">
         <p class="eyebrow mono">Inside the park</p>
         <h2 id="park-title">What we'll do</h2>
@@ -229,7 +266,7 @@
             <ul class="ticks">
               <li>An alligator</li>
               <li>Another reptile, like a snake or lizard</li>
-              <li>A mammal (which one depends on the day)</li>
+              <li>A mammal</li>
             </ul>
           </article>
           <article class="info-card show-card">
@@ -256,7 +293,7 @@
     </section>
 
     <!-- Packing + rules -->
-    <section class="section section-tint" id="pack" aria-labelledby="pack-title">
+    <section class="section" id="pack" aria-labelledby="pack-title">
       <div class="wrap">
         <p class="eyebrow mono">Before you go</p>
         <h2 id="pack-title">Pack it up</h2>
@@ -272,64 +309,22 @@
               <label><input type="checkbox" value="lunch"><span>A bagged lunch, if you didn't buy one</span></label>
               <label><input type="checkbox" value="wear"><span>Wear: school uniform or spirit shirt, with sneakers</span></label>
             </fieldset>
-            <div class="checklist-foot">
-              <p class="check-count" id="check-count" aria-live="polite">0 of 6 packed</p>
-              <button type="button" class="btn btn-outline btn-small" id="check-reset">Clear checks</button>
-            </div>
+            <p class="check-count" id="check-count" aria-live="polite">0 of 6 packed</p>
           </div>
 
           <div id="rules">
-            <h3>Rules and eligibility</h3>
+            <h3>Rules</h3>
             <ul class="rules">
               <li>Students ride the bus both ways and must be picked up at SSCS at 4:00 PM. No pickup at Wild Florida.</li>
               <li>Any money owed to the school must be paid first.</li>
               <li>Electronics are brought at the student's own risk.</li>
               <li>One adult chaperone for each group of 7 to 11 students.</li>
             </ul>
-            <div class="eligibility">
-              <h4>Eligibility</h4>
-              <p>Students who receive a disciplinary referral or suspension within one month (30 calendar days) prior to a scheduled field trip will not be permitted to attend. For disciplinary referrals or suspensions occurring more than 30 days prior to the field trip, eligibility will be determined at the discretion of school administration.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Forms and flyer -->
-    <section class="section" id="forms" aria-labelledby="forms-title">
-      <div class="wrap">
-        <p class="eyebrow mono">Forms and flyer</p>
-        <h2 id="forms-title">Get the paperwork</h2>
-
-        <div class="forms-grid">
-          <div class="download-main">
-            <p class="help-strong">You must pay on SchoolPay first.</p>
-            <a class="btn btn-red btn-big" href="assets/downloads/Wild-Florida-Permission-Slip-Fillable.pdf" download data-check>Fill out the permission slip</a>
-            <p class="help">On iPhone, open it in Files and tap a line to type. On Android, open it in Google Drive. Then print it, or sign it and email it to Mr. Livingston.</p>
-
-            <div class="chaperone-box">
-              <p><strong>Want to chaperone?</strong> Check the chaperone box on the slip, then fill out the sign-up form. Approved volunteers only.</p>
-              <a class="btn btn-navy" href="https://docs.google.com/forms/d/e/1FAIpQLSfiPphG86-RfnBeT64W534dZRwnaAFRCr4L1vhL6Yh_Ex8CCg/viewform" target="_blank" rel="noopener">Sign up to chaperone<span class="visually-hidden"> (Google Form, opens in a new tab)</span></a>
-            </div>
-
-            <ul class="downloads">
-              <li><a class="btn btn-outline" href="assets/downloads/Wild-Florida-Flyer-and-Permission-Slip.pdf" download data-check>Print flyer + permission slip</a></li>
-              <li><a class="btn btn-outline" href="assets/downloads/Wild-Florida-Flyer.png" download data-check>Download flyer</a></li>
-              <li><a class="btn btn-outline" href="assets/downloads/Wild-Florida-Permission-Slip.png" download data-check>Download permission slip</a></li>
-              <li><a class="btn btn-outline" href="assets/downloads/Wild-Florida-Social-Post.png" download data-check>Social post<span class="visually-hidden"> image</span></a></li>
-            </ul>
-            <p class="help small">Share the social post with other families in your group chats.</p>
           </div>
 
-          <div class="previews">
-            <button type="button" class="preview-card" data-lightbox="assets/downloads/Wild-Florida-Flyer.png" data-lightbox-alt="The Wild Florida trip flyer" data-zoomable>
-              <span class="preview-img"><img src="assets/downloads/Wild-Florida-Flyer.png" alt="Preview of the Wild Florida trip flyer" loading="lazy" width="1530" height="1980" data-placeholder="Flyer"></span>
-              <span class="preview-label">The flyer <span class="mono">Tap to view</span></span>
-            </button>
-            <button type="button" class="preview-card" data-lightbox="assets/downloads/Wild-Florida-Permission-Slip.png" data-lightbox-alt="The Wild Florida permission slip" data-zoomable>
-              <span class="preview-img"><img src="assets/downloads/Wild-Florida-Permission-Slip.png" alt="Preview of the Wild Florida permission slip" loading="lazy" width="1530" height="1980" data-placeholder="Permission slip"></span>
-              <span class="preview-label">The slip <span class="mono">Tap to view</span></span>
-            </button>
+          <div class="eligibility">
+            <h3>Eligibility</h3>
+            <p>Students who receive a disciplinary referral or suspension within one month (30 calendar days) prior to a scheduled field trip will not be permitted to attend. For disciplinary referrals or suspensions occurring more than 30 days prior to the field trip, eligibility will be determined at the discretion of school administration.</p>
           </div>
         </div>
       </div>
@@ -338,8 +333,7 @@
     <!-- FAQ -->
     <section class="section section-tint" id="faq" aria-labelledby="faq-title">
       <div class="wrap narrow">
-        <p class="eyebrow mono">FAQ</p>
-        <h2 id="faq-title">Good questions</h2>
+        <h2 id="faq-title">FAQ</h2>
         <div class="faq">
           <details>
             <summary>Can I pick my child up at the park?</summary>
