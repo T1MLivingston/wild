@@ -300,6 +300,7 @@ button.day:hover { filter: brightness(0.96); }
 
 .place-card { background: var(--white); border: 2px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 .place-card .photo { aspect-ratio: 16 / 10; }
+.place-card .photo img { object-position: 75% center; }
 .place-body { padding: 18px; }
 .place-body address { font-style: normal; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
 .facts { padding-left: 1.1em; margin: 0 0 10px; color: var(--muted); }
