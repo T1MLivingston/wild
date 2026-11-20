@@ -36,9 +36,9 @@ Drop files into `assets/` with the exact names below. The page picks them up on 
 - `assets/downloads/Wild-Florida-Permission-Slip-Fillable.pdf`
 - `assets/downloads/Wild-Florida-Social-Post.png`
 
-## Online permission form
+## Chaperone sign-up form
 
-The "Fill it out online" buttons go to the Google Form. To change it, search `index.html` for `docs.google.com` and swap in the new link (it appears twice).
+The "Sign up to chaperone" links go to the Google Form. It's linked in three places on the page (search `index.html` for `docs.google.com`) and inside the fillable PDF, next to the chaperone checkbox.
 
 ## Previewing other dates
 

@@ -391,6 +391,10 @@ button.day:hover { filter: brightness(0.96); }
 .preview-label { display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; font-family: var(--font-head); font-size: 1.05rem; line-height: 1.15; }
 .preview-label .mono { font-family: var(--font-mono); font-size: 0.64rem; color: var(--red); }
 
+.chaperone-box { width: 100%; max-width: 420px; background: var(--tint); border-left: 6px solid var(--blue); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 18px; }
+.chaperone-box p { margin-bottom: 10px; color: var(--ink); }
+.chaperone-box strong { color: var(--navy); }
+
 /* FAQ */
 .faq { display: grid; gap: 8px; }
 .faq details { background: var(--white); border-radius: var(--radius-sm); border: 2px solid var(--line); }
@@ -406,8 +410,10 @@ button.day:hover { filter: brightness(0.96); }
 .footer-inner { display: grid; gap: 18px; }
 .footer-q { color: var(--grey); margin-bottom: 4px; }
 .footer-email { color: var(--white); font-weight: 800; font-size: 1.05rem; word-break: break-all; }
-.footer-email:hover, .footer-park:hover { color: var(--grey); }
-.footer-park { color: var(--white); font-weight: 800; }
+.footer-email:hover { color: var(--grey); }
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.footer-links a { color: var(--white); font-weight: 800; }
+.footer-links a:hover { color: var(--grey); }
 .footer-school { color: var(--grey); font-size: 0.75rem; margin: 0; border-top: 1px solid rgba(190, 190, 190, 0.3); padding-top: 16px; }
 
 /* Lightbox */
