@@ -8,7 +8,7 @@ It's plain HTML, CSS, and JavaScript. There's no framework and no build step.
 index.html      the page
 styles.css      all styles
 script.js       countdown, calendar, checklist, image viewer
-assets/         seal, photos, calendar (.ics) files
+assets/         seal, photos, park map
 assets/downloads/  flyer, permission slip, and social post files
 ```
 
